@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ClipVero</title>
+  <meta name="description" content="Privacy Policy for ClipVero mobile video editing application.">
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --primary-light: #e0e7ff;
+      --accent: #8b5cf6;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 60px;
+    }
+
+    /* Hero Header */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #31104b 100%);
+      color: #ffffff;
+      padding: 60px 20px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30px;
+      background: var(--bg-page);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(99, 102, 241, 0.2);
+      border: 1px solid rgba(165, 180, 252, 0.3);
+      color: #c7d2fe;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+      background: linear-gradient(to right, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .meta-info {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    /* Container */
+    .container {
+      max-width: 860px;
+      margin: -40px auto 0;
+      padding: 0 20px;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Highlights Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .highlight-card {
+      background: var(--bg-card);
+      padding: 24px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .highlight-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 14px;
+    }
+
+    .highlight-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .highlight-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Main Content Card */
+    .content-box {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      padding: 44px;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 32px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title:first-of-type {
+      margin-top: 0;
+    }
+
+    .content-box p {
+      font-size: 0.975rem;
+      color: #334155;
+      margin-bottom: 14px;
+    }
+
+    .content-box ul {
+      margin: 12px 0 20px 20px;
+      color: #334155;
+      font-size: 0.95rem;
+    }
+
+    .content-box li {
+      margin-bottom: 10px;
+    }
+
+    .content-box li strong {
+      color: #0f172a;
+    }
+
+    /* Permission Card */
+    .perm-badge {
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: #f1f5f9;
+      color: #3b82f6;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 2px 8px;
+      margin-bottom: 4px;
+    }
+
+    /* Notice Box */
+    .notice {
+      background: #eef2ff;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 20px 0;
+      font-size: 0.95rem;
+      color: #312e81;
+    }
+
+    .notice strong {
+      color: #1e1b4b;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 1.85rem;
+      }
+      .content-box {
+        padding: 24px 18px;
+      }
+      .meta-info {
+        flex-direction: column;
+        gap: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="badge">Privacy First</div>
+    <h1>ClipVero Privacy Policy</h1>
+    <p>Your creativity belongs to you. We respect your privacy and never upload or sell your personal media.</p>
+    <div class="meta-info">
+      <span><strong>Application:</strong> ClipVero (com.videoeditor.clips)</span>
+      <span><strong>Effective Date:</strong> October 5, 2026</span>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- Privacy Pillars Grid -->
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-icon">🔒</div>
+        <h3>100% On-Device</h3>
+        <p>All video editing, trimming, and rendering happen strictly on your hardware. Media is never uploaded to any cloud server.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">👤</div>
+        <h3>No Account Required</h3>
+        <p>No registration, email, or password required. You can launch ClipVero and start creating instantly without sharing personal credentials.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">🚫</div>
+        <h3>Zero Data Selling</h3>
+        <p>We do not monetize your personal media, search terms, or behavior. We do not sell or trade user data to third parties.</p>
+      </div>
+    </div>
+
+    <!-- Legal Terms Content -->
+    <div class="content-box">
+      
+      <p>Welcome to <strong>ClipVero</strong> ("we", "our", or "us"). We are committed to transparency regarding how our mobile application interacts with your device and data.</p>
+
+      <div class="notice">
+        <strong>Core Commitment:</strong> ClipVero operates as an offline-first video editor. We have no external servers collecting or storing your personal videos, photos, or voice recordings.
+      </div>
+
+      <h2 class="section-title">1. On-Device Media Processing</h2>
+      <p>When you edit videos, trim clips, add stickers, adjust audio, or export files using ClipVero, all calculations and file renderings are executed entirely on your Android device's hardware using native AndroidX Media3 technologies.</p>
+      <p>Your source media and rendered video files remain stored exclusively on your device's local memory or external storage.</p>
+
+      <h2 class="section-title">2. Android Permissions and Usage</h2>
+      <p>To enable video editing features, ClipVero requests specific operating system permissions. Each permission is requested strictly for core functionality:</p>
+
+      <ul>
+        <li>
+          <div><span class="perm-badge">READ_MEDIA_VIDEO &amp; READ_MEDIA_IMAGES</span></div>
+          <strong>Gallery Access:</strong> Allows you to pick your personal video clips and images to import them onto the timeline.
+        </li>
+        <li>
+          <div><span class="perm-badge">READ_MEDIA_AUDIO &amp; RECORD_AUDIO</span></div>
+          <strong>Audio &amp; Microphone:</strong> Allows you to select background soundtracks from your library or record optional voiceover audio. Recordings are saved strictly onto your local storage.
+        </li>
+        <li>
+          <div><span class="perm-badge">READ_EXTERNAL_STORAGE &amp; WRITE_EXTERNAL_STORAGE</span></div>
+          <strong>Storage Access (Android 12 and below):</strong> Required on legacy Android versions to read media files and save rendered videos into your Movies/Gallery folder.
+        </li>
+        <li>
+          <div><span class="perm-badge">VIBRATE</span></div>
+          <strong>Haptics:</strong> Provides gentle haptic vibrations when snapping clips or dragging stickers on the preview canvas.
+        </li>
+        <li>
+          <div><span class="perm-badge">INTERNET</span></div>
+          <strong>Network Connectivity:</strong> Used for opening external share intents and standard system network checks. No user videos or photos are transmitted over the internet.
+        </li>
+      </ul>
+
+      <h2 class="section-title">3. Data Sharing &amp; Third Parties</h2>
+      <p>ClipVero does not transmit your personal data to external third parties. When you tap the <strong>Share</strong> button on an exported video, the app invokes the standard Android Sharesheet. The file is shared solely with the specific application you select (such as Instagram, TikTok, WhatsApp, or YouTube).</p>
+
+      <h2 class="section-title">4. Children's Privacy (COPPA)</h2>
+      <p>ClipVero is intended for a general audience. We do not knowingly collect personal identifiable information from children under the age of 13 (or under 16 in the European Union). Because our app operates locally and does not collect personal data, we adhere to COPPA and GDPR-K guidelines.</p>
+
+      <h2 class="section-title">5. Data Security</h2>
+      <p>Since your files are saved and processed locally on your phone, security is maintained by your Android operating system's security sandbox. We recommend keeping your Android device updated with the latest security patches.</p>
+
+      <h2 class="section-title">6. Policy Updates</h2>
+      <p>We may update this Privacy Policy from time to compliance standards. Any revisions will update the "Effective Date" at the top of this document. Continued use of the application indicates acceptance of any revisions.</p>
+
+      <h2 class="section-title">7. Contact Us</h2>
+      <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or ClipVero, please feel free to contact us:</p>
+      <ul>
+        <li><strong>Developer:</strong> ClipVero Team</li>
+        <li><strong>Package:</strong> com.videoeditor.clips</li>
+        <li><strong>Support Email:</strong> <a href="mailto:support@clipvero.app">support@clipvero.app</a></li>
+      </ul>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 ClipVero. All rights reserved.</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
